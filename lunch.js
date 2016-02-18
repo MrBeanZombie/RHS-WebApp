@@ -37,5 +37,33 @@ var lunch = {
 function lunchDay() {
     var d = new Date();
     var n = d.getDate();
-    document.getElementById('demo').innerHTML = lunch[n];
+    document.getElementById('showTheLunch').innerHTML = lunch[n];
+    showWeekDay();
+}
+
+function showWeekDay() {
+	 var x = new Date();
+    var y = x.getDay();
+    if (y === 0) {
+    	document.getElementById('showTheDayName').innerHTML = 'Sunday';
+    }
+    else if (y === 1) {
+		document.getElementById('showTheDayName').innerHTML = 'Monday';
+    }
+    else if (y ===2) {
+    	document.getElementById('showTheDayName').innerHTML = 'Tuesday';
+    }
+    else if (y === 3) {
+    	document.getElementById('showTheDayName').innerHTML = 'Wednsday';
+    }
+    else if (y === 4) {
+    	document.getElementById('showTheDayName').innerHTML = 'Thursday';
+    }
+    else if (y === 5) {
+    	document.getElementById('showTheDayName').innerHTML = 'Friday';
+    }
+    else {
+    	document.getElementById('showTheDayName').innerHTML = 'Saturday';
+    }
+
 }

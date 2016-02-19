@@ -7,25 +7,25 @@
 
   <script type="text/javascript" src="http://howardkam.com/lunch.js"></script>-->
 
-<!--Begin main code-->
-<script type="text/javascript" src="dragscroll.js"></script>
+<script type="text/javascript" src="lunch.js"></script>
 
+<!--Begin main code-->
 <table border='0' width='100%'>
   <tr>
     <td align='left'><img src='logo.png' height='50px'></td>
+    <td align='right'>
+      <a href='index.html'><img src='menu.png' height='50px'></a>
+    </td>
   </tr>
 </table>
 
 <br>
-
-<div class="dragscroll">
-  <div>
-    <img src='food.jpg'>
-  </div>
-  <div>
-    <img src='schedule.jpg'>
-  </div>
-</div>
+<span class='normal'>Today is: </span> <span id="showTheDayName"></span>
+<br>
+<span class='normal'>The lunch for today is: </span> <span id="showTheLunch"></span>
+<script>
+    lunchDay();
+</script>
 
 </body>
 </html>

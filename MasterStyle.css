@@ -1,0 +1,36 @@
+ html {
+  background: url(bg2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.normal {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 22px;
+  color: white;
+}
+
+#showTheDayName {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 22px;
+  color: white;
+}
+#showTheLunch {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 22px;
+  color: white;
+}
+
+#dragscroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 80%;
+  height: 80%;
+  overflow: scroll;
+  cursor: grab;
+  cursor : -o-grab;
+  cursor : -moz-grab;
+  cursor : -webkit-grab;
+}

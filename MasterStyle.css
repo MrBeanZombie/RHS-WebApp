@@ -38,18 +38,21 @@
 .menuLabel {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   font-size: 50px;
-  color: white;
+  color: red;
 }
 /*Clickable Div*/
 
 div.clickable { /* Containing div must have a position value */
     position:relative;
-    background-image: url(burger.jpg);
-    width: 80%;
-    height: 20%;
-    opacity: 0.95;
-
+    width: 100%;
+    height: 25%;
+     background: url(food.jpg) no-repeat center center fixed;
+     webkit-background-size: 80%;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
 }
+
 div.clickable a {
     position:absolute;
     width:100%;

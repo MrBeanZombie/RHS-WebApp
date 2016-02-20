@@ -6,7 +6,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/*Main background of all pages START*/
+/*Main background of all pages END*/
 .normal {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   font-size: 22px;
@@ -20,7 +20,13 @@
 }
 #showTheLunch {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-  font-size: 22px;
+  font-size: 30px;
+  color: white;
+}
+
+#showSchedule {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 30px;
   color: white;
 }
 
@@ -39,8 +45,15 @@
 .menuLabel {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
   font-size: 50px;
-  color: red;
+  color: black;
 }
+
+.subMenuLabel {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
 /*Slide and show START */
 #stay-in-place {
     height: 100%;
@@ -52,21 +65,24 @@
      background-size: cover;
     position: absolute;
 }
+#stay-in-place-Schedule {
+    height: 100%;
+    width: 100%;
+    background: url(schedule.jpg) no-repeat center center fixed;
+     webkit-background-size: 80%;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    position: absolute;
+}
 #move-in-to-place {
     position: absolute;
     bottom: -100%;
     height : 100%;
     width : 100%;
-    background: red;
+    background: #a1193b;
     opacity:0;
     height:0;
-}
-.box {
-    position: relative;
-    width:100%;
-    height:25%;
-    overflow:hidden;
-
 }
 .box:hover #move-in-to-place {
     bottom: 0;
@@ -76,6 +92,16 @@
     height:100%;
     opacity:1;
 }
+
+.box{
+    position: relative;
+    width:100%;
+    height:25%;
+    overflow:hidden;
+
+}
+
+
 /*Slide and show END*/
 
 /*Clickable Div START*/

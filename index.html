@@ -2,27 +2,48 @@
 <head><link rel="stylesheet" type="text/css" href="MasterStyle.css"></head>
 <body>
 <script type="text/javascript" src="http://howardkam.com/lunch.js"></script>
+<script type="text/javascript" src="http://howardkam.com/schedule.js"></script>
 <table border='0' width='100%'>
   <tr>
     <td align='left'><img src='logo.png' height='50px'></td>
     <td align='right'>
-      <a href='index.html'><img src='menu.png' height='50px'></a>
+      <!--<a href='index.html'><img src='menu.png' height='50px'></a>-->
     </td>
   </tr>
 </table>
+<!--DIV boxes for the Lunch. START-->
 <div class="box">
-<div id="stay-in-place">
-	<span class='menuLabel'>LUNCH</span>
-</div>
+  <div id="stay-in-place">
+	 <span class='menuLabel'>LUNCH<br><span class='subMenuLabel'>Tap to show</span></span>
+  </div>
 
-<div id="move-in-to-place">
-	<span class='normal'>Today is: </span> <span id="showTheDayName"></span>
-	<br>
-	<span class='normal'>The lunch for today is: </span> <span id="showTheLunch"></span>
+  <div id="move-in-to-place">
+	 <span class='normal'>Today is: </span> <span id="showTheDayName"></span>
+	 <br>
+	 <br><span id="showTheLunch"></span>
+  </div>
 </div>
+<!--DIV boxes for the Lunch. END-->
+
+<!--DIV boxes for the Schedule. START-->
+<div class="box">
+  <div id="stay-in-place-Schedule">
+   <span class='menuLabel'>Schedule<br><span class='subMenuLabel'>Tap to show</span></span>
+  </div>
+
+  <div id="move-in-to-place">
+  <span class='normal'>Schedule today: </span>
+  <br>
+  <span id='showSchedule'></span>
+  </div>
 </div>
+<!--DIV boxes for the Schedule. END-->
+
 
 <script>
     lunchDay();
+</script>
+<script>
+    bellSchedule();
 </script>
 </body>

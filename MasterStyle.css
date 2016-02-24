@@ -44,7 +44,8 @@
 
 .menuLabel {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-  font-size: 50px;
+  font-size: 40px;
+  font-weight: bold;
   color: black;
 }
 
@@ -69,6 +70,16 @@
     height: 100%;
     width: 100%;
     background: url(schedule.jpg) no-repeat center center fixed;
+     webkit-background-size: 80%;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    position: absolute;
+}
+#stay-in-place-GpaCalc {
+    height: 100%;
+    width: 100%;
+    background: url(chalkboard.jpg) no-repeat center center fixed;
      webkit-background-size: 80%;
      -moz-background-size: cover;
      -o-background-size: cover;

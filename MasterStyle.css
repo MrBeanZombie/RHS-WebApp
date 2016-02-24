@@ -91,14 +91,14 @@
     bottom: -100%;
     height : 100%;
     width : 100%;
-    background: #a1193b;
+    background: #F3C56E;
     opacity:0;
     height:0;
 }
 .box:hover #move-in-to-place {
     bottom: 0;
-    -webkit-transition: all 1s, -webkit-transform 1s;
-    transition: all 1s, transform 1s;
+    -webkit-transition: all 0.5s, -webkit-transform 0.5s;
+    transition: all 1s, transform 0.5s;
     width:100%;
     height:100%;
     opacity:1;
@@ -118,26 +118,50 @@
 /*Clickable Div START*/
 
 div.clickable { /* Containing div must have a position value */
-    position:relative;
-    width: 100%;
-    height: 25%;
-     background: url(food.jpg) no-repeat center center fixed;
-     webkit-background-size: 80%;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
+  position:relative;
+  width: 50%;
+  height: 25%;
+  background: url(chalkboard.jpg) no-repeat center center fixed;
 }
 
 div.clickable a {
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    text-decoration:none; /* Makes sure the link   doesn't get underlined */
-    z-index:10; /* raises anchor tag above everything else in div */
-    background-color:white; /*workaround to make clickable in IE */
-    opacity: 0; /*workaround to make clickable in IE */
-    filter: alpha(opacity=1); /*workaround to make clickable in IE */
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-decoration:none; /* Makes sure the link   doesn't get underlined */
+  z-index:10; /* raises anchor tag above everything else in div */
+  background-color:white; /*workaround to make clickable in IE */
+  opacity: 0; /*workaround to make clickable in IE */
+  filter: alpha(opacity=1); /*workaround to make clickable in IE */
 }
 /*Clickable Div End*/
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  text-decoration: none;
+}

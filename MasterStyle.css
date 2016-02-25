@@ -12,6 +12,11 @@
   font-size: 22px;
   color: white;
 }
+.title {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 30px;
+  color: yellow;
+}
 
 #showTheDayName {
   font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
@@ -29,17 +34,16 @@
   font-size: 30px;
   color: white;
 }
-
-#dragscroll {
-  overflow-y: hidden;
-  overflow-x: hidden;
-  width: 80%;
-  height: 80%;
-  overflow: scroll;
-  cursor: grab;
-  cursor : -o-grab;
-  cursor : -moz-grab;
-  cursor : -webkit-grab;
+#showParentsDiv {
+  background-color: black;
+  opacity: 0.85;
+  padding: 2px;
+}
+#showParentsNews {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+  font-size: 12px;
+  color: white;
+  opacity: 0.85;
 }
 
 .menuLabel {

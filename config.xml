@@ -10,7 +10,7 @@ Roosevelt High School Hawaii Android App		</description>
 		<author href="" email="webdevrhs@gmail.com">
 RHS WebDev team
 		</author>
-		<preference name="phonegap-version" value="3.7.0" />
+
 		<preference name="fullscreen" value="false" />
 		<preference name="webviewbounce" value="true" />
 		<preference name="permissions" value="none" />

@@ -3,7 +3,23 @@
 <body>
 <script type="text/javascript" src="http://howardkam.com/lunch.js"></script>
 <script type="text/javascript" src="http://howardkam.com/schedule.js"></script>
-<script type="text/javascript" src="index.js"></script>
+<script>
+	document.addEventListener('deviceready', function () {
+  // Enable to debug issues.
+  // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+  
+  var notificationOpenedCallback = function(jsonData) {
+    console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
+  };
+
+  window.plugins.OneSignal.init("0990fcc8-95d8-4a40-a899-149d56895988",
+                                 {googleProjectNumber: "446699753467"},
+                                 notificationOpenedCallback);
+  
+  // Show an alert box if a notification comes in when the user is in your app.
+  window.plugins.OneSignal.enableInAppAlertNotification(true);
+}, false);
+</script>
 <!--DIV boxes for the Lunch. START-->
 <div class="box">
   <div id="stay-in-place">
